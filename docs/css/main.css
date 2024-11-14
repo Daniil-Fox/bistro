@@ -933,6 +933,33 @@ input::-webkit-inner-spin-button {
   align-items: center;
   gap: 1rem;
 }
+.cart-item__row {
+  position: relative;
+}
+.cart-item__row .minus,
+.cart-item__row .plus {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000;
+}
+.cart-item__row .minus svg,
+.cart-item__row .plus svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.cart-item__row .minus {
+  left: 1rem;
+}
+.cart-item__row .plus {
+  right: 1rem;
+}
 .cart-item__img {
   width: 10rem;
   height: 10rem;
