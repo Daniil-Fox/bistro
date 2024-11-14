@@ -144,5 +144,10 @@ if(addToCartBtns.length > 0){
       btn.insertAdjacentElement('afterbegin', addInputCount())
       btn.classList.add('active')
     })
+
+    if(btn.classList.contains('active')){
+      btn.innerHTML = ''
+      btn.insertAdjacentElement('afterbegin', addInputCount())
+    }
   })
 }
