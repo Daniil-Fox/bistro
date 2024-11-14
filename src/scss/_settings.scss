@@ -128,6 +128,19 @@ a {
   }
 }
 
+input[type=checkbox] {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2.2rem;
+  color: #000;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -219,4 +232,13 @@ a {
       color: #e42313;
     }
   }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
