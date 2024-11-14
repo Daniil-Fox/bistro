@@ -10,6 +10,8 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sliders.js */ "./src/js/components/sliders.js");
+/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
+
 
 
 /***/ }),
@@ -25,13 +27,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
 
 
-swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation]);
 const prodSliders = document.querySelectorAll('.prod__slider');
 if (prodSliders.length > 0) {
   prodSliders.forEach(el => {
     new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(el, {
       slidesPerView: 3,
       spaceBetween: 45
+    });
+  });
+}
+new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper('.single-prod__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    prevEl: '.single-prod-prev',
+    nextEl: '.single-prod-next'
+  },
+  pagination: {
+    el: '.single-prod__pag',
+    clickable: true
+  }
+});
+
+/***/ }),
+
+/***/ "./src/js/components/tabs.js":
+/*!***********************************!*\
+  !*** ./src/js/components/tabs.js ***!
+  \***********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const tabs = document.querySelector('.tabs');
+if (tabs) {
+  const tabsItem = document.querySelectorAll('.tabs__item');
+  function clear() {
+    tabsItem.forEach(el => el.classList.remove('active'));
+  }
+  tabsItem.forEach(el => {
+    el.addEventListener('click', e => {
+      clear();
+      el.classList.add('active');
     });
   });
 }
@@ -10532,7 +10570,6 @@ const cart = document.querySelector('.cart');
 if (cart) {
   const checkAll = document.querySelector('.cart__check input');
   const checkItem = document.querySelectorAll('.cart__items input[type=checkbox]');
-  const rowInp = document.querySelectorAll('.cart-item__row');
   checkAll.addEventListener('change', e => {
     if (checkAll.checked) {
       checkItem.forEach(el => el.checked = true);
@@ -10559,6 +10596,9 @@ if (cart) {
     });
     return flag;
   }
+}
+const rowInp = document.querySelectorAll('.cart-item__row');
+if (rowInp.length > 0) {
   rowInp.forEach(el => {
     const minus = el.querySelector('.minus');
     const plus = el.querySelector('.plus');

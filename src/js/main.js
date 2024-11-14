@@ -7,7 +7,7 @@ if(cart){
   const checkAll = document.querySelector('.cart__check input')
   const checkItem = document.querySelectorAll('.cart__items input[type=checkbox]')
 
-  const rowInp = document.querySelectorAll('.cart-item__row')
+
   checkAll.addEventListener('change', e => {
     if(checkAll.checked){
       checkItem.forEach(el => el.checked = true)
@@ -39,6 +39,10 @@ if(cart){
   }
 
 
+
+}
+const rowInp = document.querySelectorAll('.cart-item__row')
+if(rowInp.length > 0){
   rowInp.forEach(el => {
     const minus = el.querySelector('.minus')
     const plus = el.querySelector('.plus')

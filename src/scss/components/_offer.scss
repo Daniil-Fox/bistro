@@ -39,6 +39,8 @@
   }
 
   &__title {
+    font-weight: 500;
+
     &:not(:last-child) {
       margin-bottom: 3rem;
     }

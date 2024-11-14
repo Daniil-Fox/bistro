@@ -115,6 +115,10 @@ a {
   font-size: 5rem;
   text-transform: uppercase;
   color: #000;
+
+  &--light {
+    color: #fff;
+  }
 }
 
 .desc {
@@ -132,6 +136,12 @@ input[type=checkbox] {
   width: 2rem;
   height: 2rem;
   flex-shrink: 0;
+}
+
+input::-webkit-calendar-picker-indicator,
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
 }
 
 .text {
@@ -177,6 +187,7 @@ input[type=checkbox] {
 }
 
 .breadcrumbs {
+
   ul {
     list-style: none;
     padding: 0;
@@ -206,6 +217,14 @@ input[type=checkbox] {
 
       &:last-child {
         color: #8f8f8f;
+      }
+    }
+  }
+
+  &--light {
+    ul {
+      li {
+        color: #fff;
       }
     }
   }
