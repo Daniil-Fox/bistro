@@ -159,6 +159,11 @@ input[type=checkbox] {
   width: 2rem;
   height: 2rem;
   flex-shrink: 0;
+
+  @include small-tablet {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 input::-webkit-calendar-picker-indicator,
