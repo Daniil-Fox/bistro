@@ -1,8 +1,16 @@
 .bonus {
   padding: 7rem 0;
 
+  @include small-tablet {
+    padding: 3rem 0;
+  }
+
   &__breadcrumbs {
     margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   &__title {
@@ -15,6 +23,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+
+    @include small-tablet {
+      margin-bottom: 3rem;
+    }
   }
 
   &__points {
@@ -26,6 +38,11 @@
     justify-content: center;
     align-items: center;
     gap: .5rem;
+
+    @include small-tablet {
+      height: 3.5rem;
+      padding: 0.5rem 2rem;
+    }
 
     svg {
       width: 1.8rem;
@@ -41,6 +58,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    @include small-tablet {
+      height: 3.5rem;
+      padding: 0.5rem 2rem;
+    }
   }
 
   &__pers {
@@ -50,6 +73,10 @@
       font-weight: 300;
       font-size: 1.7rem;
       color: #000;
+
+      @include small-tablet {
+        font-size: 1.3rem;
+      }
     }
   }
 
@@ -59,6 +86,10 @@
     background: #fff;
 
     border-radius: 2rem;
+
+    @include small-tablet {
+      padding: 2rem;
+    }
   }
 
 
@@ -84,6 +115,11 @@
     font-weight: 300;
     font-size: 1.7rem;
     color: #000;
+
+    @include small-tablet {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__row {
@@ -124,9 +160,18 @@
     font-size: 2.5rem;
     color: #040404;
 
+    @include small-tablet {
+      font-size: 1.6rem;
+    }
+
     svg {
       width: 2rem;
       height: 2rem;
+
+      @include small-tablet {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
   }
 }

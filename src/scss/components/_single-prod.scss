@@ -1,18 +1,35 @@
 .single-prod {
   padding: 7rem 0;
 
+  @include small-tablet {
+    padding: 3rem 0;
+  }
+
   &__breadcrumbs {
     margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   &__title {
     margin-bottom: 6rem;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 7rem;
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
 
   &__left {
@@ -29,6 +46,11 @@
       border-radius: 1rem;
       overflow: hidden;
 
+      @include small-tablet {
+
+        height: 30rem;
+      }
+
       img {
         display: block;
         width: 100%;
@@ -39,6 +61,9 @@
     .swiper-wrapper {
       margin-bottom: 1rem;
 
+      @include small-tablet {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
@@ -48,6 +73,11 @@
     --swiper-pagination-color: #000;
     --swiper-pagination-bullet-width: 1.5rem;
     --swiper-pagination-bullet-height: 1.5rem;
+
+    @include small-tablet {
+      --swiper-pagination-bullet-width: .6rem;
+      --swiper-pagination-bullet-height: .6rem;
+    }
   }
 
   &__control {
@@ -58,6 +88,10 @@
     width: 1.2rem;
     height: 3.7rem;
     cursor: pointer;
+
+    @include small-tablet {
+      height: 2.5rem;
+    }
 
     &--prev {
       left: 1.5rem;
@@ -80,16 +114,29 @@
     font-weight: 400;
     font-size: 3.5rem;
     color: #000;
+
+    @include small-tablet {
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__text {
     &:not(:last-child) {
       margin-bottom: 2rem;
+
+      @include small-tablet {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
   &__t {
     margin-bottom: 5rem;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   &__price {
@@ -98,6 +145,10 @@
     font-size: 2.5rem;
     text-align: center;
     color: #040404;
+
+    @include small-tablet {
+      font-size: 2rem;
+    }
   }
 
   &__row {
@@ -105,11 +156,17 @@
     display: flex;
     align-items: center;
     gap: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 2.5rem;
+      gap: 2rem;
+    }
   }
 
   &__btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     padding: 1.2rem 7rem;
     border: 0.50px solid #000;
@@ -119,9 +176,20 @@
     font-size: 2.5rem;
     color: #e42313;
 
+    @include small-tablet {
+      font-size: 1.5rem;
+      padding: 1rem -2rem;
+      width: 100%;
+    }
+
     svg {
       width: 3rem;
       height: 3rem;
+
+      @include small-tablet {
+        width: 2rem;
+        height: 2rem;
+      }
     }
   }
 }

@@ -85,3 +85,64 @@ if(burger){
     document.body.style.overflow = active ? 'hidden' : null
   })
 }
+
+
+
+const addToCartBtns = document.querySelectorAll('.add-to-cart')
+
+if(addToCartBtns.length > 0){
+  function addInputCount(){
+    const container = document.createElement('div')
+    container.classList.add('cart-item__row')
+    container.classList.add('prod__count')
+
+    const minus = document.createElement('div')
+    minus.classList.add('minus')
+    minus.innerHTML = '-'
+
+    const inputNum = document.createElement('input')
+    inputNum.type = 'number'
+    inputNum.value = 1
+
+    const plus = document.createElement('div')
+    plus.classList.add('plus')
+    plus.innerHTML = '+'
+
+    inputNum.addEventListener('input', e => {
+      if(inputNum.value < 1){
+        inputNum.value = 1
+      }
+    })
+    inputNum.addEventListener('change', e => {
+      if(inputNum.value < 1){
+        inputNum.value = 1
+      }
+    })
+    plus.addEventListener('click', e => {
+      inputNum.value++
+    })
+    minus.addEventListener('click', e => {
+      inputNum.value--
+
+      if(inputNum.value < 1){
+        inputNum.value = 1
+      }
+    })
+
+    container.append(minus)
+    container.append(inputNum)
+    container.append(plus)
+
+    return container;
+  }
+  addToCartBtns.forEach(btn => {
+    let flag = false
+    btn.addEventListener('click', e => {
+      if(flag) return
+      flag = true
+      btn.innerHTML = ''
+      btn.insertAdjacentElement('afterbegin', addInputCount())
+      btn.classList.add('active')
+    })
+  })
+}

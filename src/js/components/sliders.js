@@ -11,6 +11,14 @@ if(prodSliders.length > 0){
     new Swiper(el, {
       slidesPerView: 3,
       spaceBetween: 45,
+      navigation: {
+        prevEl: el.closest('.prod__wrapper')?.querySelector('.prod__arr--prev'),
+        nextEl: el.closest('.prod__wrapper')?.querySelector('.prod__arr--next'),
+      },
+      pagination: {
+        el: el.closest('.prod__wrapper')?.querySelector('.prod-pagi'),
+        clickable: true
+      },
       breakpoints: {
         320: {
           slidesPerView: 1,
@@ -34,7 +42,7 @@ new Swiper('.single-prod__slider', {
     nextEl: '.single-prod-next'
   },
   pagination: {
-    el: '.single-prod__pag',
+    el: '.sp-pagi',
     clickable: true
   }
 })

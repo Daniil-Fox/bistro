@@ -28,6 +28,9 @@ html {
   min-width: 360px;
   min-height: 100%;
   font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -42,6 +45,14 @@ a {
 
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
 }
 
 .is-hidden {
@@ -224,8 +235,12 @@ input::-webkit-outer-spin-button {
       align-items: center;
       gap: 1rem;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 2rem;
       color: #000;
+
+      @include small-tablet {
+        font-size: 1.4rem;
+      }
 
       a {
         color: inherit;
@@ -260,6 +275,10 @@ input::-webkit-outer-spin-button {
   padding: 0;
   margin: 0;
 
+  @include small-tablet {
+    gap: 1rem;
+  }
+
   &__item {
     padding: 1.5rem 8rem;
     border: 0.50px solid #000;
@@ -268,6 +287,12 @@ input::-webkit-outer-spin-button {
     font-size: 2.5rem;
     color: #000;
     cursor: pointer;
+
+    @include small-tablet {
+      padding: 1rem 1.6rem;
+      font-size: 1.4rem;
+      line-height: 1;
+    }
 
     &.active {
       color: #e42313;

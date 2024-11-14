@@ -1,24 +1,45 @@
 .checkout {
   padding: 4rem 0 10rem;
 
+  @include small-tablet {
+    padding: 2rem 0 4rem;
+  }
+
   &__back {
     display: inline-block;
     margin-bottom: 4rem;
     font-size: 2rem;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
   }
 
   &__tabs {
     margin-bottom: 2.5rem;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   &__title {
     margin-bottom: 6rem;
     font-weight: 500;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   &__input {
     &:not(:last-child) {
       margin-bottom: 2.4rem;
+
+      @include small-tablet {
+        margin-bottom: 1.5rem;
+      }
     }
 
     display: block;
@@ -32,6 +53,10 @@
     border: 0.50px solid #000;
     border-radius: 5px;
 
+    @include small-tablet {
+      max-width: 100%;
+    }
+
     &::placeholder {
       color: #757575;
 
@@ -41,6 +66,10 @@
       max-width: 100%;
       resize: none;
       height: 10rem;
+
+      @include small-tablet {
+        height: 6rem;
+      }
     }
   }
 
@@ -49,11 +78,14 @@
     grid-template-columns: repeat(12, 1fr);
     align-items: flex-start;
     gap: 3.4rem;
+
+    @include small-tablet {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+    }
   }
 
-  &__body {
-    grid-column: 8 span;
-  }
 
   &__total {
     grid-column: 4 span;
@@ -67,6 +99,10 @@
     font-weight: 300;
     font-size: 3rem;
     color: #040404;
+
+    @include small-tablet {
+      font-size: 2rem;
+    }
   }
 
   &__wrap {
@@ -89,10 +125,16 @@
   }
 
   &__body {
+    grid-column: 8 span;
     padding: 4.5rem 7rem;
     box-shadow: 0 4px 4px 0 rgba(144, 144, 144, 0.25);
     background: #fff;
     border-radius: 2rem;
+
+    @include small-tablet {
+      padding: 2rem;
+      border-radius: 0.5rem;
+    }
   }
 
   &__form {
@@ -111,6 +153,7 @@
     display: flex;
     align-items: center;
     gap: .8rem;
+    flex-wrap: wrap;
 
     p {
       margin: 0;
@@ -148,18 +191,33 @@
   &__tabs {
     max-width: 90%;
 
+    @include small-tablet {
+      max-width: 100%;
+    }
   }
 
   &__tab {
     padding: 1.5rem 5rem;
+
+    @include small-tablet {
+      padding: 1.5rem;
+    }
   }
 
   &__bonus {
     margin: 2rem 0;
+
+    @include small-tablet {
+      margin: 1rem 0;
+    }
   }
 
   &__form-b {
     margin-bottom: 4rem;
+
+    @include small-tablet {
+      margin-bottom: 2rem;
+    }
 
     input {
       margin-bottom: 2rem;
@@ -174,6 +232,8 @@
     color: #000;
     border: 0.50px solid #000;
     border-radius: 5px;
+
+
   }
 
   &-total {
@@ -245,6 +305,10 @@
   padding: 3rem;
   box-shadow: 0 4px 4px 0 rgba(144, 144, 144, 0.25);
   background: #fff;
+
+  @include small-tablet {
+    width: 100%;
+  }
 
   &__title {
     margin-bottom: 3rem;
