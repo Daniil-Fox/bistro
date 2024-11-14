@@ -1,13 +1,25 @@
 .products {
   margin-bottom: 9rem;
 
+  @include small-tablet {
+    margin-bottom: 4rem;
+  }
+
   &__container {
     display: flex;
+
+    @include small-tablet {
+      display: block;
+    }
   }
 
   &__img {
     flex: 2;
     position: relative;
+
+    @include small-tablet {
+      display: none;
+    }
 
     img {
       position: absolute;
@@ -34,6 +46,11 @@
     font-size: 4rem;
     text-transform: uppercase;
     color: #000;
+
+    @include small-tablet {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__item {
@@ -41,8 +58,16 @@
     align-items: center;
     gap: 3rem;
 
+    @include small-tablet {
+      gap: 1rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: 3rem;
+
+      @include small-tablet {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -53,6 +78,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include small-tablet {
+      width: 3rem;
+      height: 3rem;
+    }
 
     img {
       display: block;
@@ -69,5 +99,9 @@
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #000;
+
+    @include small-tablet {
+      font-size: 1.6rem;
+    }
   }
 }

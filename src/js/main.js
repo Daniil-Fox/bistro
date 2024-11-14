@@ -70,3 +70,18 @@ if(rowInp.length > 0){
     })
   })
 }
+
+
+const burger = document.querySelector('.header__burger')
+
+if(burger){
+  const menu = document.querySelector('.menu')
+
+  burger.addEventListener('click', e => {
+    e.preventDefault()
+    let active = menu.classList.toggle('active')
+    burger.classList.toggle('active')
+
+    document.body.style.overflow = active ? 'hidden' : null
+  })
+}

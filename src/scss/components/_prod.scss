@@ -6,6 +6,10 @@
   &__img {
     height: 54.7rem;
 
+    @include small-tablet {
+      height: 45rem;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -34,6 +38,11 @@
     font-weight: 400;
     font-size: 1.7rem;
     color: #fff;
+
+    @include small-tablet {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__title {
@@ -44,6 +53,11 @@
     font-size: 2.2rem;
     text-transform: uppercase;
     color: #fff;
+
+    @include small-tablet {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__price {
@@ -52,6 +66,10 @@
     font-weight: 400;
     font-size: 2.5rem;
     color: #fff;
+
+    @include small-tablet {
+      font-size: 2rem;
+    }
   }
 
   &__prize {
@@ -70,12 +88,23 @@
     color: #000;
 
     border-radius: 5px;
+
+    @include small-tablet {
+      font-size: 2rem;
+      padding: 1rem 1.5rem;
+      gap: 5px;
+    }
   }
 
   &__icon {
     width: 3.5rem;
     height: 3.5rem;
     flex-shrink: 0;
+
+    @include small-tablet {
+      width: 2rem;
+      height: 2rem;
+    }
 
     svg {
       width: 100%;

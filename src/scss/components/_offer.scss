@@ -1,6 +1,10 @@
 .offer {
   padding: 9rem 0;
 
+  @include small-tablet {
+    padding: 4.5rem 0;
+  }
+
   &__header {
     .line {
       position: relative;
@@ -10,6 +14,10 @@
       margin: 0 auto;
       margin-bottom: 4rem;
       top: 50%;
+
+      @include small-tablet {
+        margin-bottom: 2rem;
+      }
 
       &::before,
       &::after {
@@ -36,6 +44,11 @@
     max-width: 103.3rem;
     margin: 0 auto;
     margin-bottom: 4.5rem;
+
+    @include small-tablet {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__title {

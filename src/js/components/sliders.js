@@ -10,7 +10,17 @@ if(prodSliders.length > 0){
   prodSliders.forEach(el => {
     new Swiper(el, {
       slidesPerView: 3,
-      spaceBetween: 45
+      spaceBetween: 45,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        769: {
+          slidesPerView: 3,
+          spaceBetween: 45
+        }
+      }
     })
   })
 }

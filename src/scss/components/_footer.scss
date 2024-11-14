@@ -2,6 +2,10 @@
   background-color: #000;
   padding: 9rem 0;
 
+  @include small-tablet {
+    padding: 4rem 0;
+  }
+
   &__container {
     max-width: calc(140rem + var(--container-offset) * 2);
     padding: 0 var(--container-offset);
@@ -9,6 +13,11 @@
     display: flex;
     justify-content: space-between;
     gap: 12rem;
+
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
   }
 
   &__map {
@@ -28,6 +37,10 @@
     display: block;
     height: 4.8rem;
 
+    @include small-tablet {
+      height: 4rem;
+    }
+
     img {
       display: block;
       height: 100%;
@@ -42,6 +55,11 @@
     font-weight: 400;
     font-size: 1.8rem;
     color: rgba(255, 255, 255, 0.6);
+
+    @include small-tablet {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__content {
@@ -59,6 +77,10 @@
     font-weight: 700;
     font-size: 1.8rem;
     color: #fff;
+
+    @include small-tablet {
+      font-size: 1.4rem;
+    }
   }
 
   &__item {
