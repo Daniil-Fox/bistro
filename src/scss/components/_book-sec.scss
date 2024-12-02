@@ -162,12 +162,17 @@
 
   &__btn {
     background: #fff;
-    border: 0.50px solid #000;
+    border: 0.50px solid #8F8F8F;
     border-radius: 1rem;
     padding: 1.4rem 6.4rem;
     font-weight: 500;
     font-size: 2.5rem;
     color: #e42313;
+
+    @include hover {
+      background-color: #000;
+      color: #fff !important;
+    }
 
     @include small-tablet {
       font-size: 1.6rem;

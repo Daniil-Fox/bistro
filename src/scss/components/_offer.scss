@@ -52,14 +52,22 @@
   }
 
   &__title {
-    font-weight: 500;
 
     &:not(:last-child) {
       margin-bottom: 3rem;
+
+      @include small-tablet {
+        margin-bottom: 1rem;
+      }
     }
   }
 
+  &__bonus {
+    font-weight: 300;
+  }
+
   &__desc {
+    font-weight: 300;
     margin-bottom: 2rem;
   }
 

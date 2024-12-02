@@ -11,41 +11,5 @@
       </main>
       @include('partials/footer.html')
     </div>
-    <script src="https://api-maps.yandex.ru/v3/?apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&lang=ru_RU"></script>
-    <script>
-      main();
-      async function main() {
-        await ymaps3.ready;
-        await ymaps3.import.registerCdn(
-          "https://cdn.jsdelivr.net/npm/{package}",
-          "@yandex/ymaps3-default-ui-theme@0.0.2"
-        );
-        const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } =
-          ymaps3;
-
-        const { YMapDefaultMarker } = await ymaps3.import(
-          "@yandex/ymaps3-default-ui-theme"
-        );
-
-        map = new YMap(
-          document.getElementById("map"),
-          {
-            location: {
-              center: [37.602382, 55.776077],
-              zoom: 17,
-            },
-            showScaleInCopyrights: true,
-          },
-          [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})]
-        );
-
-        const marker = new YMapDefaultMarker({
-          coordinates: [37.602382, 55.776077],
-          color: "tulip",
-          size: "normal",
-        });
-        map.addChild(marker);
-      }
-    </script>
   </body>
 </html>

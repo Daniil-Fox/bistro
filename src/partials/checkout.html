@@ -1,6 +1,20 @@
 <section class="checkout">
   <div class="container">
-    <a href="#" class="text checkout__back">Вернуться в корзину</a>
+    <!-- <a href="#" class="text checkout__back">Вернуться в корзину</a> -->
+    <!-- <a href="#" class="text checkout__back">Меню</a> -->
+    <div class="breadcrumbs single-prod__breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">Меню</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+        <li>
+          <span>Оформление заказа</span>
+        </li>
+      </ul>
+    </div>
     <h2 class="title2 checkout__title">Оформление заказа</h2>
 
     <div class="checkout__container">
@@ -9,7 +23,9 @@
           <form class="checkout__form">
             <div class="checkout__subtitle">Способ получения</div>
             <div class="tabs__items checkout__tabs tabs">
-              <div class="checkout__tab tabs__item">Самовызов</div>
+              <div class="checkout__tab tabs__item" data-tab="sam">
+                Самовызов
+              </div>
               <div class="checkout__tab tabs__item active">Доставка</div>
             </div>
 
@@ -67,6 +83,43 @@
                   value="Другое время"
                 />
                 <span>Другое время</span>
+              </label>
+            </div>
+          </form>
+          <form action="#" class="checkout__form checkout__form--address">
+            <div class="checkout__subtitle">Точка для самовывоза</div>
+
+            <div class="checkout__ways">
+              <label class="pay">
+                <input
+                  type="radio"
+                  name="pay"
+                  class="visually-hidden"
+                  value="SberPay"
+                  checked
+                />
+                <span class="box"></span>
+                <span>Точка 1</span>
+              </label>
+              <label class="pay">
+                <input
+                  type="radio"
+                  name="pay"
+                  class="visually-hidden"
+                  value="Картой на сайте"
+                />
+                <span class="box"></span>
+                <span>Точка 2</span>
+              </label>
+              <label class="pay">
+                <input
+                  type="radio"
+                  name="pay"
+                  class="visually-hidden"
+                  value="Наличными"
+                />
+                <span class="box"></span>
+                <span>Точка 3</span>
               </label>
             </div>
           </form>

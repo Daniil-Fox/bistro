@@ -9,6 +9,15 @@ if(tabs){
     el.addEventListener('click', e => {
       clear()
       el.classList.add('active')
+
+      const addr = document.querySelector('.checkout__form--address')
+      if(addr){
+        if(el.dataset.tab == 'sam'){
+          addr.style.display = 'block'
+        } else {
+          addr.style.display = null
+        }
+      }
     })
   })
 }

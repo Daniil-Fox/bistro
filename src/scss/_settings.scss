@@ -127,12 +127,12 @@ a {
   margin: 0;
 
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   color: #000;
 
   @include small-tablet {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   &--light {
@@ -143,11 +143,11 @@ a {
 .desc {
   margin: 0;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   color: #000;
 
   @include small-tablet {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   &--white {
@@ -175,7 +175,7 @@ input::-webkit-outer-spin-button {
 .text {
   margin: 0;
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #000;
 
   @include small-tablet {
@@ -189,7 +189,7 @@ input::-webkit-outer-spin-button {
   justify-content: center;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 2.3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #000;
   border: 3px solid #fff;
@@ -286,12 +286,18 @@ input::-webkit-outer-spin-button {
 
   &__item {
     padding: 1.5rem 8rem;
-    border: 0.50px solid #000;
+    border: 0.50px solid #8F8F8F;
     border-radius: 5px;
     font-weight: 500;
     font-size: 2.5rem;
     color: #000;
     cursor: pointer;
+    transition: .3s ease-out;
+
+    @include hover {
+      background-color: #000;
+      color: #fff !important;
+    }
 
     @include small-tablet {
       padding: 1rem 1.6rem;

@@ -93,7 +93,7 @@
         >
           <path
             d="M20.8745 20.8752L26.4995 26.5002M23.9995 12.7502C23.9995 9.7665 22.8142 6.90502 20.7045 4.79523C18.5947 2.68545 15.7332 1.50018 12.7495 1.50018C9.76583 1.50018 6.90434 2.68545 4.79456 4.79523C2.68478 6.90502 1.49951 9.7665 1.49951 12.7502C1.49951 15.7339 2.68478 18.5953 4.79456 20.7051C6.90434 22.8149 9.76583 24.0002 12.7495 24.0002C15.7332 24.0002 18.5947 22.8149 20.7045 20.7051C22.8142 18.5953 23.9995 15.7339 23.9995 12.7502Z"
-            stroke="#000"
+            stroke="#8F8F8F"
             stroke-width="1.5"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -110,7 +110,7 @@
         >
           <path
             d="M5 16.25V26.25H13.75V16.25H5ZM15 16.25V26.25H23.75V16.25H15ZM25 16.25V27.5H3.75V16.25H2.5V8.75H6.3L6.25 8.125C6.25 6.96468 6.71094 5.85188 7.53141 5.03141C8.35188 4.21094 9.46468 3.75 10.625 3.75C12.2125 3.75 13.6125 4.6 14.375 5.875C15.1375 4.6 16.5375 3.75 18.125 3.75C19.2853 3.75 20.3981 4.21094 21.2186 5.03141C22.0391 5.85188 22.5 6.96468 22.5 8.125L22.45 8.75H26.25V16.25H25ZM3.75 10V15H13.75V10H3.75ZM25 15V10H15V15H25ZM21.1875 8.75L21.25 8.125C21.25 7.2962 20.9208 6.50134 20.3347 5.91529C19.7487 5.32924 18.9538 5 18.125 5C17.2962 5 16.5013 5.32924 15.9153 5.91529C15.3292 6.50134 15 7.2962 15 8.125V8.75H21.1875ZM13.75 8.75V8.125C13.75 7.2962 13.4208 6.50134 12.8347 5.91529C12.2487 5.32924 11.4538 5 10.625 5C9.7962 5 9.00134 5.32924 8.41529 5.91529C7.82924 6.50134 7.5 7.2962 7.5 8.125L7.5625 8.75H13.75Z"
-            fill="#000"
+            fill="#8F8F8F"
           />
         </svg>
       </a>
@@ -126,12 +126,12 @@
           <g clip-path="url(#clip0_2121_1165)">
             <path
               d="M29.7557 8.32034C29.6697 8.19821 29.5557 8.09853 29.4231 8.02969C29.2906 7.96086 29.1434 7.92487 28.9941 7.92478H9.09751L7.59142 2.73103C7.00079 0.685869 5.59732 0.465088 5.0217 0.465088H1.00592C0.491201 0.465088 0.0749512 0.881807 0.0749512 1.39603C0.0749512 1.91024 0.49167 2.32693 1.00589 2.32693H5.0212C5.14823 2.32693 5.53589 2.32693 5.80029 3.24053L10.9814 22.2816C11.0939 22.6833 11.46 22.9608 11.8776 22.9608H24.5329C24.9258 22.9608 25.2764 22.7147 25.409 22.3449L29.8697 9.17065C29.9723 8.88519 29.9297 8.56737 29.7558 8.32034H29.7557ZM23.8778 21.0995H12.5842L9.62078 9.78712H27.6705L23.8778 21.0995ZM22.0314 24.8476C20.7367 24.8476 19.6877 25.8967 19.6877 27.1913C19.6877 28.486 20.7367 29.5351 22.0314 29.5351C23.3261 29.5351 24.3752 28.486 24.3752 27.1913C24.3752 25.8967 23.3261 24.8476 22.0314 24.8476ZM13.5939 24.8476C12.2992 24.8476 11.2502 25.8967 11.2502 27.1913C11.2502 28.486 12.2992 29.5351 13.5939 29.5351C14.8886 29.5351 15.9377 28.486 15.9377 27.1913C15.9377 25.8967 14.8886 24.8476 13.5939 24.8476Z"
-              fill="#000"
+              fill="#8F8F8F"
             />
           </g>
           <defs>
             <clipPath id="clip0_2121_1165">
-              <rect width="30" height="30" fill="#000" />
+              <rect width="30" height="30" fill="#8F8F8F" />
             </clipPath>
           </defs>
         </svg>
@@ -162,7 +162,21 @@
       <main class="main">
         <section class="checkout">
   <div class="container">
-    <a href="#" class="text checkout__back">Вернуться в корзину</a>
+    <!-- <a href="#" class="text checkout__back">Вернуться в корзину</a> -->
+    <!-- <a href="#" class="text checkout__back">Меню</a> -->
+    <div class="breadcrumbs single-prod__breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">Меню</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+        <li>
+          <span>Оформление заказа</span>
+        </li>
+      </ul>
+    </div>
     <h2 class="title2 checkout__title">Оформление заказа</h2>
 
     <div class="checkout__container">
@@ -171,7 +185,9 @@
           <form class="checkout__form">
             <div class="checkout__subtitle">Способ получения</div>
             <div class="tabs__items checkout__tabs tabs">
-              <div class="checkout__tab tabs__item">Самовызов</div>
+              <div class="checkout__tab tabs__item" data-tab="sam">
+                Самовызов
+              </div>
               <div class="checkout__tab tabs__item active">Доставка</div>
             </div>
 
@@ -229,6 +245,43 @@
                   value="Другое время"
                 />
                 <span>Другое время</span>
+              </label>
+            </div>
+          </form>
+          <form action="#" class="checkout__form checkout__form--address">
+            <div class="checkout__subtitle">Точка для самовывоза</div>
+
+            <div class="checkout__ways">
+              <label class="pay">
+                <input
+                  type="radio"
+                  name="pay"
+                  class="visually-hidden"
+                  value="SberPay"
+                  checked
+                />
+                <span class="box"></span>
+                <span>Точка 1</span>
+              </label>
+              <label class="pay">
+                <input
+                  type="radio"
+                  name="pay"
+                  class="visually-hidden"
+                  value="Картой на сайте"
+                />
+                <span class="box"></span>
+                <span>Точка 2</span>
+              </label>
+              <label class="pay">
+                <input
+                  type="radio"
+                  name="pay"
+                  class="visually-hidden"
+                  value="Наличными"
+                />
+                <span class="box"></span>
+                <span>Точка 3</span>
               </label>
             </div>
           </form>
@@ -517,43 +570,42 @@
     </div>
   </div>
 </footer>
+<script src="https://api-maps.yandex.ru/v3/?apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&lang=ru_RU"></script>
+<script>
+  main();
+  async function main() {
+    await ymaps3.ready;
+    await ymaps3.import.registerCdn(
+      "https://cdn.jsdelivr.net/npm/{package}",
+      "@yandex/ymaps3-default-ui-theme@0.0.2"
+    );
+    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
+
+    const { YMapDefaultMarker } = await ymaps3.import(
+      "@yandex/ymaps3-default-ui-theme"
+    );
+
+    map = new YMap(
+      document.getElementById("map"),
+      {
+        location: {
+          center: [37.601978, 55.776396],
+          zoom: 17,
+        },
+        showScaleInCopyrights: true,
+      },
+      [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})]
+    );
+
+    const marker = new YMapDefaultMarker({
+      coordinates: [37.601978, 55.776396],
+      color: "tulip",
+      size: "normal",
+    });
+    map.addChild(marker);
+  }
+</script>
 
     </div>
-    <script src="https://api-maps.yandex.ru/v3/?apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&lang=ru_RU"></script>
-    <script>
-      main();
-      async function main() {
-        await ymaps3.ready;
-        await ymaps3.import.registerCdn(
-          "https://cdn.jsdelivr.net/npm/{package}",
-          "@yandex/ymaps3-default-ui-theme@0.0.2"
-        );
-        const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } =
-          ymaps3;
-
-        const { YMapDefaultMarker } = await ymaps3.import(
-          "@yandex/ymaps3-default-ui-theme"
-        );
-
-        map = new YMap(
-          document.getElementById("map"),
-          {
-            location: {
-              center: [37.602382, 55.776077],
-              zoom: 17,
-            },
-            showScaleInCopyrights: true,
-          },
-          [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})]
-        );
-
-        const marker = new YMapDefaultMarker({
-          coordinates: [37.602382, 55.776077],
-          color: "tulip",
-          size: "normal",
-        });
-        map.addChild(marker);
-      }
-    </script>
   </body>
 </html>

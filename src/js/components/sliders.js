@@ -9,8 +9,8 @@ const prodSliders = document.querySelectorAll('.prod__slider')
 if(prodSliders.length > 0){
   prodSliders.forEach(el => {
     new Swiper(el, {
-      slidesPerView: 3,
-      spaceBetween: 45,
+      slidesPerView: 4,
+      spaceBetween: 20,
       navigation: {
         prevEl: el.closest('.prod__wrapper')?.querySelector('.prod__arr--prev'),
         nextEl: el.closest('.prod__wrapper')?.querySelector('.prod__arr--next'),
@@ -21,12 +21,12 @@ if(prodSliders.length > 0){
       },
       breakpoints: {
         320: {
-          slidesPerView: 1,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
         769: {
-          slidesPerView: 3,
-          spaceBetween: 45
+          slidesPerView: 4,
+          spaceBetween: 20
         }
       }
     })
