@@ -181,8 +181,8 @@
       transition: .3s ease-out;
 
       @include hover {
-        background-color: #000;
-        color: #fff !important;
+        background-color: #fff;
+        color: #e42313 !important;
       }
 
       input:checked~span {
@@ -245,8 +245,8 @@
     transition: .3s ease-out;
 
     @include hover {
-      background-color: #000;
-      color: #fff !important;
+      background-color: #fff;
+      color: #e42313 !important;
     }
 
   }
@@ -277,8 +277,8 @@
       transition: .3s ease-out;
 
       @include hover {
-        background-color: #000;
-        color: #fff !important;
+        background-color: #fff;
+        color: #e42313 !important;
       }
     }
   }

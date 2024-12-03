@@ -10,13 +10,15 @@ if(tabs){
       clear()
       el.classList.add('active')
 
-      const addr = document.querySelector('.checkout__form--address')
-      if(addr){
-        if(el.dataset.tab == 'sam'){
-          addr.style.display = 'block'
-        } else {
-          addr.style.display = null
-        }
+      const addr = document.querySelectorAll('.checkout__form--address')
+      if(addr && addr.length > 0){
+        addr.forEach(item => {
+          if(el.dataset.tab == 'sam'){
+            item.style.display = 'block'
+          } else {
+            item.style.display = null
+          }
+        })
       }
     })
   })

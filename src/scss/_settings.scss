@@ -194,7 +194,7 @@ input::-webkit-outer-spin-button {
   color: #000;
   border: 3px solid #fff;
   border-radius: .5rem;
-  padding: 2rem 6rem;
+  padding: 1rem 3rem;
   background-color: #fff;
   backdrop-filter: blur(8px);
   box-shadow: 3px 0 4px 0 rgba(0, 0, 0, 0.1);
@@ -202,8 +202,8 @@ input::-webkit-outer-spin-button {
   transition: .3s ease-out;
 
   @include hover {
-    color: #fff;
-    background-color: transparent;
+    color: #e42313;
+    background-color: #fff;
   }
 
   @include small-tablet {
@@ -216,10 +216,10 @@ input::-webkit-outer-spin-button {
     color: #fff;
     background-color: transparent;
 
-    @include hover {
-      color: #000;
-      background-color: #fff;
-    }
+    // @include hover {
+    //   color: #000;
+    //   background-color: #fff;
+    // }
   }
 
 }
@@ -289,8 +289,8 @@ input::-webkit-outer-spin-button {
     border: 0.50px solid #8F8F8F;
     border-radius: 5px;
     font-weight: 500;
-    font-size: 2.5rem;
-    color: #000;
+    font-size: 2rem;
+    color: #8f8f8f;
     cursor: pointer;
     transition: .3s ease-out;
 
