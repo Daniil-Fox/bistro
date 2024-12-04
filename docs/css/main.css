@@ -290,9 +290,8 @@ input::-webkit-outer-spin-button {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 2rem;
-  text-transform: uppercase;
   color: #000;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   border-radius: 0.5rem;
   padding: 1rem 3rem;
   background-color: #fff;
@@ -625,6 +624,16 @@ input::-webkit-inner-spin-button {
   padding-top: 24.5rem;
   padding-bottom: 18rem;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .hero {
@@ -643,6 +652,9 @@ input::-webkit-inner-spin-button {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(34, 34, 34, 0.57)), color-stop(53.5%, rgba(34, 34, 34, 0.45)), to(rgba(34, 34, 34, 0)));
   background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.57) 30%, rgba(34, 34, 34, 0.45) 53.5%, rgba(34, 34, 34, 0) 100%);
 }
+.hero .container {
+  width: 100%;
+}
 .hero__content {
   position: relative;
   z-index: 5;
@@ -651,7 +663,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
   margin-bottom: 2.7rem;
   font-weight: 300;
-  font-size: 7.2rem;
+  font-size: 6rem;
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -1063,7 +1075,6 @@ input::-webkit-inner-spin-button {
   margin-bottom: 4rem;
   font-weight: 300;
   font-size: 4rem;
-  text-transform: uppercase;
   color: #000;
 }
 @media (max-width: 768px) {
@@ -1126,7 +1137,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
   font-weight: 300;
   font-size: 2.5rem;
-  text-transform: uppercase;
   color: #000;
 }
 @media (max-width: 768px) {
@@ -1503,9 +1513,9 @@ input::-webkit-inner-spin-button {
   padding: 0.7rem;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  -webkit-box-shadow: 3px 0 4px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 3px 0 4px 0 rgba(0, 0, 0, 0.1);
-  background: #000;
+  -webkit-box-shadow: 3px 0 4px 0 rgba(143, 143, 143, 0.1);
+  box-shadow: 3px 0 4px 0 rgba(143, 143, 143, 0.1);
+  background: #8f8f8f;
   border-radius: 1rem;
   font-family: var(--second-family);
   font-weight: 400;
@@ -1862,7 +1872,11 @@ input::-webkit-inner-spin-button {
   }
 }
 .checkout__tab {
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 @media (max-width: 768px) {
   .checkout__tab {
@@ -2358,6 +2372,10 @@ input::-webkit-inner-spin-button {
 .single-prod__title {
   margin-bottom: 6rem;
   font-weight: 500;
+  color: #494949;
+}
+.single-prod__title span {
+  font-size: 75%;
 }
 @media (max-width: 768px) {
   .single-prod__title {
@@ -2411,7 +2429,7 @@ input::-webkit-inner-spin-button {
 }
 .single-prod__pag {
   position: static;
-  --swiper-pagination-color: #000;
+  --swiper-pagination-color: #141414;
   --swiper-pagination-bullet-width: 1.5rem;
   --swiper-pagination-bullet-height: 1.5rem;
 }
@@ -2453,7 +2471,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 3.5rem;
-  color: #000;
+  color: #494949;
 }
 .single-prod__name span {
   font-size: 70%;
@@ -2485,7 +2503,7 @@ input::-webkit-inner-spin-button {
   font-weight: 300;
   font-size: 2.5rem;
   text-align: center;
-  color: #040404;
+  color: #494949;
 }
 @media (max-width: 768px) {
   .single-prod__price {
@@ -2520,7 +2538,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   gap: 2rem;
   padding: 1.2rem 7rem;
-  border: 0.5px solid #000;
+  border: 0.5px solid #8f8f8f;
   border-radius: 1rem;
   font-family: var(--font-family);
   font-weight: 500;
@@ -2726,7 +2744,7 @@ input::-webkit-inner-spin-button {
 }
 @media (any-hover: hover) {
   .book-form__btn:hover {
-    background-color: #000;
+    background-color: #4b4b4b;
     color: #fff !important;
   }
 }

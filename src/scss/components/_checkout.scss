@@ -207,7 +207,10 @@
   }
 
   &__tab {
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 2rem;
+    // min-width: 15rem;
+    text-align: left;
+    justify-content: flex-start;
 
     @include small-tablet {
       padding: 1.5rem;
