@@ -2416,7 +2416,7 @@ input::-webkit-inner-spin-button {
 }
 @media (max-width: 768px) {
   .single-prod__slider .swiper-slide {
-    height: 30rem;
+    height: 24rem;
   }
 }
 .single-prod__slider .swiper-slide img {
