@@ -2273,6 +2273,11 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #dedede;
   margin-bottom: 3rem;
 }
+@media (max-width: 576px) {
+  .b-item:not(:last-child) {
+    padding-bottom: 1.2rem;
+  }
+}
 .b-item__row {
   display: -webkit-box;
   display: -ms-flexbox;
