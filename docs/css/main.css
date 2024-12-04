@@ -2731,6 +2731,11 @@ input::-webkit-inner-spin-button {
   text-align: left;
   display: block;
 }
+@media (max-width: 768px) {
+  .book-form__input--area {
+    height: 6rem;
+  }
+}
 .book-form__btn {
   background: #fff;
   border: 0.5px solid #8F8F8F;

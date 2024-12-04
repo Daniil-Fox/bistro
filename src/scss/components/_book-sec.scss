@@ -153,6 +153,10 @@
       height: 12rem;
       text-align: left;
       display: block;
+
+      @include small-tablet {
+        height: 6rem;
+      }
     }
   }
 
