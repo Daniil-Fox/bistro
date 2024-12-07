@@ -324,6 +324,17 @@
               </label>
             </div>
           </form>
+
+          <form action="#" class="ch-pay">
+            <div class="ch-pay__title">Оплатить бонусами</div>
+            <input type="text" class="ch-pay__input" />
+            <button class="btn-reset ch-pay__btn">Списать</button>
+          </form>
+          <form action="#" class="ch-pay">
+            <div class="ch-pay__title">Сумма к оплате:</div>
+            <div class="ch-pay__cost">430 руб</div>
+            <button class="btn-reset ch-pay__ord">К оформлению</button>
+          </form>
         </div>
 
         <form action="#" class="checkout__bottom">
@@ -338,109 +349,25 @@
         </form>
       </div>
 
-      <!-- <div class="checkout__total ch-t">
-        <div class="ch-t__title text">Ваш заказ:</div>
-
-        <div class="ch-t__item">
-          <div class="ch-t__top">
-            <div class="ch-t__img">
-              <img src="./img/cart/01.webp" alt="" />
-            </div>
-            <div class="ch-t__info">
-              <div class="ch-t__name">мортаделла</div>
-              <div class="ch-t__desc">Варенная колбаса</div>
-              <div class="ch-t__desc">100гр.</div>
-            </div>
-            <a href="#" class="ch-t__cart">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_2062_858)">
-                  <path
-                    d="M17.8534 4.99217C17.8018 4.9189 17.7334 4.85909 17.6538 4.81779C17.5743 4.77648 17.486 4.75489 17.3964 4.75483H5.45846L4.5548 1.63858C4.20043 0.411491 3.35835 0.279022 3.01297 0.279022H0.603502C0.294672 0.279022 0.0449219 0.529053 0.0449219 0.837585C0.0449219 1.14612 0.294953 1.39613 0.603484 1.39613H3.01267C3.08889 1.39613 3.32148 1.39613 3.48013 1.94429L6.58878 13.3689C6.65628 13.61 6.87594 13.7765 7.12651 13.7765H14.7197C14.9554 13.7765 15.1658 13.6288 15.2454 13.4069L17.9217 5.50236C17.9833 5.33108 17.9578 5.14039 17.8534 4.99217H17.8534ZM14.3266 12.6596H7.55048L5.77242 5.87224H16.6022L14.3266 12.6596ZM13.2188 14.9085C12.442 14.9085 11.8125 15.538 11.8125 16.3148C11.8125 17.0916 12.442 17.721 13.2188 17.721C13.9956 17.721 14.625 17.0916 14.625 16.3148C14.625 15.538 13.9956 14.9085 13.2188 14.9085ZM8.15629 14.9085C7.37948 14.9085 6.75004 15.538 6.75004 16.3148C6.75004 17.0916 7.37948 17.721 8.15629 17.721C8.93311 17.721 9.56254 17.0916 9.56254 16.3148C9.56254 15.538 8.93311 14.9085 8.15629 14.9085Z"
-                    fill="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2062_858">
-                    <rect width="18" height="18" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-
-          <div class="ch-t__extra">начислим 30 бонусов</div>
-
-          <div class="cart-item__row">
-            <span class="minus">
-              <svg
-                width="17"
-                height="17"
-                viewBox="0 0 17 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.2373 8.36066L3.48321 8.36066"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-            <input type="number" value="1" class="cart-item__count" />
-            <span class="plus"
-              ><svg
-                width="17"
-                height="17"
-                viewBox="0 0 17 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.63965 13.2377L8.63965 3.4836"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.5166 8.36066L3.7625 8.36066"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.5166 8.36066L3.7625 8.36066"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-          </div>
+      <div class="checkout__total ch-t">
+        <div class="ch-t__title text">Условия и стоимость доставки</div>
+        <div class="ch-t__price">до 10 000 ₽</div>
+        <div class="ch-t__del">
+          Самовывоз по адресу: Москва, ул. Долгоруковская, 25 К2 ПН-ВС
+          12:00–23:00
         </div>
-
-        <div class="checkout__bonus text">Оплатить бонусами</div>
-        <form action="#" class="checkout__form-b">
-          <input type="text" class="checkout__input checkout__input" />
-          <button class="btn-reset checkout__btn">Списать</button>
-        </form>
-
-        <div class="checkout-total">
-          <div class="text checkout-total-title">Сумма к оплате:</div>
-          <div class="checkout-total-sum">430 руб</div>
-          <a href="#" class="btn-reset checkout-total-sub text">К оформлению</a>
-        </div>
-      </div> -->
+        <p class="ch-t__text">
+          При заказе до 12:00 все сыры мы сможем привезти на следующий рабочий
+          день
+          <br /><br />
+          ПН-ПТ с 10:00–19:00 по условиям и тарифам Яндекс доставки или
+          обсуждается индивидуально
+          <br /><br />
+          Заказ десертов и «Помощь вашему столу» осуществляется за 48 часов.
+        </p>
+        <div class="ch-t__price">от 10 000 ₽</div>
+        <div class="ch-t__del">Доставка по Москве бесплатно</div>
+      </div>
     </div>
   </div>
 </section>
